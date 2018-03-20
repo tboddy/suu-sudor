@@ -1,10 +1,10 @@
 var data = {
 	songboard: [
-		{title: 'a01', uploader: 'adler', filename: 'a01'},
-		{title: 'a02', uploader: 'adler', filename: 'a02'},
-		{title: 'a03', uploader: 'adler', filename: 'a03'},
-		{title: 't01', uploader: 'trevor', filename: 't01'},
-		{title: 't02', uploader: 'trevor', filename: 't02'}
+		{title: 'AM01', uploader: 'adler', filename: 'a01'},
+		{title: 'AM02', uploader: 'adler', filename: 'a02'},
+		{title: 'AM03', uploader: 'adler', filename: 'a03'},
+		{title: 'TB01', uploader: 'trevor', filename: 't01'},
+		{title: 'TB02', uploader: 'trevor', filename: 't02'}
 	]
 },
 
@@ -24,6 +24,7 @@ build = {
 		};
 		data.songboard.forEach(addRow);
 		$('#songboardTable tbody').html(list);
+		$('#songboard').show();
 	}
 };
 
