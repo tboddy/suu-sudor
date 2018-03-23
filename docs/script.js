@@ -7,7 +7,7 @@ var data = {
 		{title: 'TB02', uploader: 'trevor', filename: 't02'},
 		{title: 'the other one', uploader: 'adler', filename: 'a04'},
 		{title: 'TB03', uploader: 'trevor', filename: 't03'},
-		{title: 'TB04', uploader: 'trevor', filename: 't04'}
+		{title: 'TB04', uploader: 'trevor', filename: 'tb04'}
 	]
 },
 
