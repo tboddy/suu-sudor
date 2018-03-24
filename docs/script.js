@@ -7,7 +7,7 @@ var data = {
 		{title: 'TB02', uploader: 'trevor', filename: 't02'},
 		{title: 'the other one', uploader: 'adler', filename: 'a04'},
 		{title: 'TB03', uploader: 'trevor', filename: 't03'},
-		{title: 'TB04', uploader: 'trevor', filename: 'tb04'}
+		{title: 'TB04', uploader: 'trevor', filename: 'tb04', tab: 'tb04'}
 	]
 },
 
@@ -20,13 +20,15 @@ build = {
 	songboard: function(){
 		var list = '';
 		var addRow = function(song){
+			var tabButton = song.tab ? ' <a title="Download Tab" href="tabs/' + song.tab + '.txt" target="_blank"><i class="fas fa-fw fa-sticky-note"></i></a>' : '';
 			list += '<tr>\
 				<td>' + song.title + '</td>\
 				<td>' + song.uploader + '</td>\
 				<td class="littleCell">\
-					<span data-song="' + song.title + '" data-file="https://tboddy.github.io/suu-sudor/mp3/' + song.filename + '.mp3" data-playing="false"><i class="fas fa-fw fa-play"></i></span>\
-					<a href="mp3/' + song.filename + '.mp3" target="_blank"><i class="fas fa-fw fa-download"></i></a>\
-				</td>\
+					<span title="Listen" data-song="' + song.title + '" data-file="https://tboddy.github.io/suu-sudor/mp3/' + song.filename + '.mp3" data-playing="false"><i class="fas fa-fw fa-play"></i></span>\
+					<a title="Download MP3" href="mp3/' + song.filename + '.mp3" target="_blank"><i class="fas fa-fw fa-download"></i></a>' +
+					tabButton +
+				'</td>\
 				</tr>';
 		};
 		data.songboard.forEach(addRow);
