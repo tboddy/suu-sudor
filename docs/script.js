@@ -3,11 +3,11 @@ var data = {
 		{title: 'AM01', uploader: 'adler', filename: 'a01'},
 		{title: 'AM02', uploader: 'adler', filename: 'a02'},
 		{title: 'AM03', uploader: 'adler', filename: 'a03'},
+		{title: 'the other one', uploader: 'adler', filename: 'otherone'},
 		{title: 'TB01', uploader: 'trevor', filename: 't01'},
-		{title: 'coward', uploader: 'trevor', filename: 't02'},
-		{title: 'the other one', uploader: 'adler', filename: 'a04'},
-		{title: 'uroborus', uploader: 'trevor', filename: 't03'},
-		{title: 'TB04', uploader: 'trevor', filename: 'tb04', tab: 'tb04'}
+		{title: 'coward', uploader: 'trevor', filename: 'coward', tab: 'coward'},
+		{title: 'uroborus', uploader: 'trevor', filename: 'uroborus'},
+		{title: 'doujin', uploader: 'trevor', filename: 'doujin', tab: 'doujin'}
 	]
 },
 
