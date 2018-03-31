@@ -5,10 +5,10 @@ var data = {
 		{title: 'AM03', uploader: 'adler', filename: 'a03'},
 		{title: 'the other one', uploader: 'adler', filename: 'otherone'},
 		{title: 'TB01', uploader: 'trevor', filename: 't01'},
-		{title: 'coward', uploader: 'trevor', filename: 'coward', tab: 'coward'},
+		{title: 'coward', uploader: 'trevor', filename: 'coward', tab: true},
 		{title: 'uroborus', uploader: 'trevor', filename: 'uroborus'},
-		{title: 'doujin', uploader: 'trevor', filename: 'doujin', tab: 'doujin'},
-		{title: 'FM01', uploader: 'frank', filename: 'f01'}
+		{title: 'doujin', uploader: 'trevor', filename: 'doujin', tab: true},
+		{title: 'FM01', uploader: 'frank', filename: 'f01', lyrics: true}
 	]
 },
 
@@ -21,7 +21,10 @@ build = {
 	songboard: function(){
 		var list = '';
 		var addRow = function(song){
-			var tabButton = song.tab ? ' <a title="Download Tab" href="tabs/' + song.tab + '.txt" target="_blank"><i class="fas fa-fw fa-sticky-note"></i></a>' : '';
+			var tabButton = song.tab ? ' <a title="Download Tab" href="tabs/' + song.filename + '.txt" target="_blank">\
+				<i class="fas fa-fw fa-sticky-note"></i></a>' : '<i class="fas fa-fw fa-sticky-note" style="opacity:0;"></i>',
+				lyricsButton = song.lyrics ? '<a title="Download Lyrics" href="lyrics/' + song.filename + '.txt" target="_blank">\
+				<i class="fas fa-fw fa-file-alt"></i>' : '<i class="fas fa-fw fa-file-alt" style="opacity:0;"></i>';
 			list += '<tr>\
 				<td>' + song.title + '</td>\
 				<td>' + song.uploader + '</td>\
@@ -29,6 +32,7 @@ build = {
 					<span title="Listen" data-song="' + song.title + '" data-file="https://tboddy.github.io/suu-sudor/mp3/' + song.filename + '.mp3" data-playing="false"><i class="fas fa-fw fa-play"></i></span>\
 					<a title="Download MP3" href="mp3/' + song.filename + '.mp3" target="_blank"><i class="fas fa-fw fa-download"></i></a>' +
 					tabButton +
+					lyricsButton +
 				'</td>\
 				</tr>';
 		};
