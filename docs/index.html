@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>suu sõdur</title>
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,500,500i,700,700i" rel="stylesheet" />
 	<link rel="stylesheet" href="style.css" />
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
@@ -11,18 +12,31 @@
 <body>
 	<div class="container">
 		<img src="logo.png" class="logo" />
-		<div id="songboard" style="display:none;">
-			<h3>songboard</h3>
-			<table id="songboardTable">
+		<div id="content" style="display:none;">
+
+			<h3>rehearsals</h3>
+			<table id="rehearsals">
+				<thead>
+					<tr>
+						<th>title</th>
+						<th>date</th>
+						<th colspan="2">vocals?</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+
+			<h3>songwriter demos</h3>
+			<table id="songwriterDemos">
 				<thead>
 					<tr>
 						<th>working title</th>
 						<th colspan="4">uploader</th>
 					</tr>
 				</thead>
-				<tbody>
-				</tbody>
+				<tbody></tbody>
 			</table>
+
 		</div>
 	</div>
 	<script src="script.js"></script>

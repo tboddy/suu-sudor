@@ -1,5 +1,5 @@
 var data = {
-	songboard: [
+	songwriterDemos: [
 		{title: 'AM01', uploader: 'adler', filename: 'a01'},
 		{title: 'AM02', uploader: 'adler', filename: 'a02'},
 		{title: 'AM03', uploader: 'adler', filename: 'a03'},
@@ -9,23 +9,32 @@ var data = {
 		{title: 'uroborus', uploader: 'trevor', filename: 'uroborus'},
 		{title: 'doujin', uploader: 'trevor', filename: 'doujin', tab: true},
 		{title: 'FM01', uploader: 'frank', filename: 'f01', lyrics: true}
+	],
+	rehearsals: [
+		{title: 'swallow a shotgun', date: '03/31/18', vocals: true, filename: 'swallow-033118-vocals'},
+		{title: 'swallow a shotgun', date: '03/31/18', filename: 'swallow-033118-novocals'},
+		{title: 'coward', date: '03/31/18', vocals: true, filename: 'coward-033118-vocals'},
+		{title: 'coward', date: '03/31/18', filename: 'coward-033118-novocals'}
 	]
 },
 
 init = function(){
 	// setup.songs();
-	build.songboard();
+	build.songwriterDemos();
+	build.rehearsals();
+	$('#content').show();
+	events.songs();
 },
 
 build = {
-	songboard: function(){
-		var list = '';
-		var addRow = function(song){
+
+	songwriterDemos: function(){
+		var table = '', addRow = function(song){
 			var tabButton = song.tab ? ' <a title="Download Tab" href="tabs/' + song.filename + '.txt" target="_blank">\
 				<i class="fas fa-fw fa-sticky-note"></i></a>' : '<i class="fas fa-fw fa-sticky-note" style="opacity:0;"></i>',
 				lyricsButton = song.lyrics ? '<a title="Download Lyrics" href="lyrics/' + song.filename + '.txt" target="_blank">\
 				<i class="fas fa-fw fa-file-alt"></i>' : '<i class="fas fa-fw fa-file-alt" style="opacity:0;"></i>';
-			list += '<tr>\
+			table += '<tr>\
 				<td>' + song.title + '</td>\
 				<td>' + song.uploader + '</td>\
 				<td class="littleCell">\
@@ -36,11 +45,27 @@ build = {
 				'</td>\
 				</tr>';
 		};
-		data.songboard.forEach(addRow);
-		$('#songboardTable tbody').html(list);
-		$('#songboard').show();
-		events.songs();
+		data.songwriterDemos.forEach(addRow);
+		$('#songwriterDemos tbody').html(table);
+	},
+
+	rehearsals: function(){
+		var table = '', addRow = function(song){
+			var vocalsIcon = song.vocals ? '<i class="fas fa-fw fa-check"></i>' : '<i class="fas fa-fw fa-times"></i>';
+			table += '<tr>\
+				<td>' + song.title + '</td>\
+				<td>' + song.date + '</td>\
+				<td>' + vocalsIcon + '</td>\
+				<td class="littleCell">\
+					<span title="Listen" data-song="' + song.title + '" data-file="https://tboddy.github.io/suu-sudor/mp3/' + song.filename + '.mp3" data-playing="false"><i class="fas fa-fw fa-play"></i></span>\
+					<a title="Download MP3" href="mp3/' + song.filename + '.mp3" target="_blank"><i class="fas fa-fw fa-download"></i></a>\
+				</td>\
+				</tr>';
+		};
+		data.rehearsals.forEach(addRow);
+		$('#rehearsals tbody').html(table);
 	}
+
 },
 
 events = {
