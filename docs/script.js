@@ -91,7 +91,8 @@ events = {
 			var clearPlayingSong = function(song){
 				if($('[data-song="' + song.title + '"]').attr('data-playing') == 'true') $('[data-song="' + song.title + '"]').html('<i class="fas fa-fw fa-play"></i></span>').attr('data-playing', 'false');
 			};
-			data.songboard.forEach(clearPlayingSong);
+			data.songwriterDemos.forEach(clearPlayingSong);
+			data.rehearsals.forEach(clearPlayingSong);
 		}, stopSong = function(){
 			clearSong();
 			currentButton.html('<i class="fas fa-fw fa-play"></i>').attr('data-playing', 'false');
