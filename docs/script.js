@@ -1,21 +1,31 @@
 var data = {
 	songwriterDemos: [
-		{title: 'AM01', uploader: 'adler', filename: 'a01'},
+		{title: 'really quite ridiculous', uploader: 'adler', filename: 'a01'},
 		{title: 'AM02', uploader: 'adler', filename: 'a02'},
 		{title: 'AM03', uploader: 'adler', filename: 'a03'},
 		{title: 'the other one', uploader: 'adler', filename: 'otherone'},
 		{title: 'TB01', uploader: 'trevor', filename: 't01'},
 		{title: 'coward', uploader: 'trevor', filename: 'coward', tab: true},
 		{title: 'uroborus', uploader: 'trevor', filename: 'uroborus'},
-		{title: 'doujin', uploader: 'trevor', filename: 'doujin', tab: true},
+		{title: 'subterranean animism', uploader: 'trevor', filename: 'doujin', tab: true},
 		{title: 'FM01', uploader: 'frank', filename: 'f01', lyrics: true},
 		{title: 'FM02', uploader: 'frank', filename: 'f02'},
 	],
 	rehearsals: [
+
+		{title: 'swallow a shotgun', date: '04/07/18', vocals: true, filename: 'swallow-040718-vocals'},
+		{title: 'coward', date: '04/07/18', vocals: true, filename: 'coward-040718-vocals'},
+		{title: 'really quite ridiculous', date: '04/07/18', vocals: true, filename: 'ridiculous-040718-vocals'},
+		{title: 'subterranean animism', date: '04/07/18', vocals: true, filename: 'animism-040718-vocals'},
+
+		{title: 'really quite ridiculous', date: '04/07/18', vocals: false, filename: 'ridiculous-040718-novocals'},
+		{title: 'subterranean animism', date: '04/07/18', vocals: false, filename: 'animism-040718-novocals'},
+
 		{title: 'swallow a shotgun', date: '03/31/18', vocals: true, filename: 'swallow-033118-vocals'},
-		{title: 'swallow a shotgun', date: '03/31/18', filename: 'swallow-033118-novocals'},
 		{title: 'coward', date: '03/31/18', vocals: true, filename: 'coward-033118-vocals'},
-		{title: 'coward', date: '03/31/18', filename: 'coward-033118-novocals'}
+
+		{title: 'coward', date: '03/31/18', filename: 'coward-033118-novocals'},
+		{title: 'swallow a shotgun', date: '03/31/18', filename: 'swallow-033118-novocals'}
 	]
 },
 
