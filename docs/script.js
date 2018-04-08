@@ -13,7 +13,7 @@ var data = {
 	],
 	rehearsals: [
 
-		{title: 'swallow a shotgun', date: '04/07/18', vocals: true, filename: 'swallow-040718-vocals'},
+		{title: 'gates of hell', date: '04/07/18', vocals: true, filename: 'swallow-040718-vocals'},
 		{title: 'coward', date: '04/07/18', vocals: true, filename: 'coward-040718-vocals'},
 		{title: 'really quite ridiculous', date: '04/07/18', vocals: true, filename: 'ridiculous-040718-vocals'},
 		{title: 'subterranean animism', date: '04/07/18', vocals: true, filename: 'animism-040718-vocals'},
@@ -21,11 +21,11 @@ var data = {
 		{title: 'really quite ridiculous', date: '04/07/18', vocals: false, filename: 'ridiculous-040718-novocals'},
 		{title: 'subterranean animism', date: '04/07/18', vocals: false, filename: 'animism-040718-novocals'},
 
-		{title: 'swallow a shotgun', date: '03/31/18', vocals: true, filename: 'swallow-033118-vocals'},
+		{title: 'gates of hell', date: '03/31/18', vocals: true, filename: 'swallow-033118-vocals'},
 		{title: 'coward', date: '03/31/18', vocals: true, filename: 'coward-033118-vocals'},
 
 		{title: 'coward', date: '03/31/18', filename: 'coward-033118-novocals'},
-		{title: 'swallow a shotgun', date: '03/31/18', filename: 'swallow-033118-novocals'}
+		{title: 'gates of hell', date: '03/31/18', filename: 'swallow-033118-novocals'}
 	]
 },
 
