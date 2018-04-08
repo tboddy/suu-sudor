@@ -8,7 +8,8 @@ var data = {
 		{title: 'coward', uploader: 'trevor', filename: 'coward', tab: true},
 		{title: 'uroborus', uploader: 'trevor', filename: 'uroborus'},
 		{title: 'doujin', uploader: 'trevor', filename: 'doujin', tab: true},
-		{title: 'FM01', uploader: 'frank', filename: 'f01', lyrics: true}
+		{title: 'FM01', uploader: 'frank', filename: 'f01', lyrics: true},
+		{title: 'FM02', uploader: 'frank', filename: 'f02'},
 	],
 	rehearsals: [
 		{title: 'swallow a shotgun', date: '03/31/18', vocals: true, filename: 'swallow-033118-vocals'},
