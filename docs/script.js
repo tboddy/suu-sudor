@@ -8,7 +8,7 @@ var data = {
 		{title: 'coward', uploader: 'trevor', filename: 'coward', tab: true},
 		{title: 'uroborus', uploader: 'trevor', filename: 'uroborus'},
 		{title: 'subterranean animism', uploader: 'trevor', filename: 'doujin', tab: true},
-		{title: 'ten desires', uploader: 'trevor', filename: 'tendesires'},
+		{title: 'ten desires', uploader: 'trevor', filename: 'tendesires', lyrics: true},
 		{title: 'FM01', uploader: 'frank', filename: 'f01', lyrics: true},
 		{title: 'FM02', uploader: 'frank', filename: 'f02'},
 	],
